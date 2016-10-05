@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="prev" type="id"/>
+    <item name="month" type="id"/>
+    <item name="next" type="id"/>
+    <item name="base" type="id"/>
+</resources>
