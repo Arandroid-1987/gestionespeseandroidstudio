@@ -1,0 +1,95 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:weightSum="10" >
+
+        <LinearLayout
+            android:id="@+id/previousPage"
+            android:layout_width="@dimen/activity_horizontal_margin"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:baselineAligned="false"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingTop="@dimen/activity_vertical_margin" >
+
+            <com.fortysevendeg.swipelistview.SwipeListView
+                xmlns:swipe="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/listView1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/linearRiepilogoSomme"
+                android:layout_alignParentTop="true"
+                android:listSelector="#00000000"
+                swipe:swipeActionLeft="reveal"
+                swipe:swipeActionRight="reveal"
+                swipe:swipeAnimationTime="100"
+                swipe:swipeBackView="@+id/prova"
+                swipe:swipeCloseAllItemsWhenMoveList="true"
+                swipe:swipeFrontView="@+id/rowSpesa"
+                swipe:swipeMode="left"
+                swipe:swipeOffsetLeft="20dip"
+                swipe:swipeOffsetRight="0dip"
+                swipe:swipeOpenOnLongPress="true" />
+
+            <LinearLayout
+                android:id="@+id/linearRiepilogoSomme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/sommaSpese"
+                    style="@style/Bilancio_Voci"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/bilancio_spese" />
+
+                <TextView
+                    android:id="@+id/sommaRicavi"
+                    style="@style/Bilancio_Voci"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/bilancio_ricavi" />
+
+                <TextView
+                    android:id="@+id/bilancio"
+                    style="@style/Bilancio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/nextPage"
+            android:layout_width="@dimen/activity_horizontal_margin"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:src="@drawable/nuovo_ricavo" />
+
+</FrameLayout>

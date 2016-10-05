@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nome:"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/dirName"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:singleLine="true"
+            android:inputType="text"
+            android:imeOptions="actionGo" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/okButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="OK"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/annullaButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Annulla"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

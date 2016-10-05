@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BilancioPersonale.iml" filepath="$PROJECT_DIR$/BilancioPersonale.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bilancioPersonale/bilancioPersonale.iml" filepath="$PROJECT_DIR$/bilancioPersonale/bilancioPersonale.iml" />
+      <module fileurl="file://$PROJECT_DIR$/contextRail/contextRail.iml" filepath="$PROJECT_DIR$/contextRail/contextRail.iml" />
+      <module fileurl="file://$PROJECT_DIR$/droidText/droidText.iml" filepath="$PROJECT_DIR$/droidText/droidText.iml" />
+      <module fileurl="file://$PROJECT_DIR$/swipelistviewLibrary/swipelistviewLibrary.iml" filepath="$PROJECT_DIR$/swipelistviewLibrary/swipelistviewLibrary.iml" />
+    </modules>
+  </component>
+</project>
